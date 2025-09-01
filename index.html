@@ -44,30 +44,6 @@
             align-items: center;
         }
 
-.logo {
-  font-size: 26px;
-  font-weight: bold;
-  color: #667eea;
-  position: relative;
-  left: -100px; /* Push a bit left */
-  text-decoration: none; /* remove browser default underline */
-}
-
-.logo a {
-  text-decoration: none; /* if logo is inside <a> */
-  color: inherit; /* keep same color */
-}
-
-.logo::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 0;
-  height: 2px;
-  background: #667eea;
-  animation: underlineGrow 1s ease-out forwards;
-}
 
 @keyframes underlineGrow {
   from { width: 0; }
@@ -572,7 +548,7 @@
     <!-- Header -->
     <header class="header">
         <nav class="nav container">
-            <a href="#home" class="logo">Sujithra Jayan</a>
+            <a href="#home" class="logo"></a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
