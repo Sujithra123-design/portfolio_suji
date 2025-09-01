@@ -708,7 +708,7 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h3>Business Analyst</h3>
-                                               <p><strong>June 2023 – Present</strong></p>
+                                                <p><strong>June 2023 – Present</strong></p>
                         <p>Leading digital transformation initiatives for global clients including People Tray and MPX in Perth, Australia. Specializing in business requirement analysis, data visualization, and cross-functional team coordination.</p>
                         <ul class="service-features">
                             <li>Reduced documentation gaps by 20% through stakeholder sessions</li>
@@ -939,34 +939,7 @@
             }
         });
 
-        // Add typing animation to hero text
-        const heroTitle = document.querySelector('.hero h1');
-        const heroSubtitle = document.querySelector('.hero .subtitle');
-        
-        function typeWriter(element, text, speed = 100) {
-            element.innerHTML = '';
-            let i = 0;
-            const timer = setInterval(() => {
-                if (i < text.length) {
-                    element.innerHTML += text.charAt(i);
-                    i++;
-                } else {
-                    clearInterval(timer);
-                }
-            }, speed);
-        }
-
-        // Start typing animation after page load
-        window.addEventListener('load', () => {
-            setTimeout(() => {
-                typeWriter(heroTitle, 'Business Analyst', 80);
-                setTimeout(() => {
-                    typeWriter(heroSubtitle, 'Digital Transformation & Data-Driven Solutions', 50);
-                }, 1500);
-            }, 1000);
-        });
-
-        // Service card hover effects
+                // Service card hover effects
         document.querySelectorAll('.service-card').forEach(card => {
             card.addEventListener('mouseenter', function() {
                 this.style.transform = 'translateY(-10px) rotateY(5deg)';
